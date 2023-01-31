@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
 
+//Transform the App.js into a class-based component
 class App extends React.Component {
+  //Implement a state for this class containing a Person ={ fullName,bio, imgSrc, profession} and a boolean shows
   state = {
     Person: {
       fullName: "Elvis Presley",
@@ -19,7 +21,7 @@ class App extends React.Component {
       show: !this.state.show,
     });
   };
-
+  //Add a button that toggles the show state. When the show state is true the person's profile will appear
   render() {
     return (
       <>
